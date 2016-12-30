@@ -1,0 +1,6 @@
+.idea
+.env
+vendor
+/nomad
+phinx.yml
+phinx.php

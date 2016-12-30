@@ -1,0 +1,29 @@
+<?php
+
+use Nomad\Console\Database\NomadTable;
+use Nomad\Console\Database\AbstractNomadMigration;
+
+class $className extends AbstractNomadMigration {
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up() {
+        $this->create('$tableName', function (NomadTable $table) {
+            $table->increments('$tableNameId');
+
+            $table->vaultStandardColumns();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down() {
+        $this->dropTable('$tableName');
+    }
+}
