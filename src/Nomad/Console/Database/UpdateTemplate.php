@@ -2,9 +2,9 @@
 
 namespace Nomad\Console\Database;
 
-use Phinx\Migration\CreationInterface;
+use Phinx\Migration\AbstractTemplateCreation;
 
-class UpdateTemplate implements CreationInterface {
+class UpdateTemplate extends AbstractTemplateCreation {
 
 	/**
 	 * Get the migration template.
